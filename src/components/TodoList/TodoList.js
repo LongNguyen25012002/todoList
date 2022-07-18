@@ -7,7 +7,7 @@ import {
   UpdateItemAction,
 } from "../TodoListReduce/TodoListReducer";
 
-const TodoList = () => {
+const TodoList = ({components}) => {
   const [selectValue, setSelectValue] = useState("7h-9h");
   const [nameList, setNameList] = useState("");
   const [levelCheckRadio, setLevelCheckRadio] = useState("");
@@ -221,6 +221,7 @@ const TodoList = () => {
           </button>
         </form>
       </div>
+      {components}
     </div>
   );
 };
